@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursos de Equitación | Clases de equitación para todas las edades</title>
+  <meta name="description" content="Aprendé equitación en un entorno natural y seguro. Cursos para niños, jóvenes y adultos. Clases personalizadas, caballos preparados y profesores capacitados. Consultá por WhatsApp.">
+  <meta name="keywords" content="equitación, cursos de equitación, clases de equitación, montar a caballo, escuela de equitación">
+  <meta name="theme-color" content="#4a2f17">
+  <link rel="canonical" href="https://www.domanativa.com.ar/">
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Doma Nativa | Cursos de Equitación">
+  <meta property="og:description" content="Aprendé equitación en un entorno natural y seguro. Cursos para niños, jóvenes y adultos.">
+  <meta property="og:image" content="assets/logo.jpeg">
+  <meta property="og:locale" content="es_AR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon: reemplazar por el logo del emprendimiento -->
+  <link rel="icon" href="assets/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ===================== BARRA DE SCROLL CON CABALLO ===================== -->
+  <div class="scroll-rail" aria-hidden="true">
+    <div class="scroll-rail__track">
+      <div class="scroll-rail__fill" id="scrollFill"></div>
+      <span class="scroll-rail__horse" id="scrollHorse">🐴</span>
+    </div>
+  </div>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <!-- LOGO: Doma Nativa - María Laura Bruzzone -->
+      <a href="#inicio" class="logo">
+        <img src="assets/logo.jpeg" alt="Doma Nativa - María Laura Bruzzone" class="logo__img">
+        <span class="logo__text">Doma Nativa</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#quienes-somos" class="nav__link">Quiénes somos</a></li>
+          <li><a href="#cursos" class="nav__link">Cursos</a></li>
+          <li><a href="#galeria" class="nav__link">Galería</a></li>
+          <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Carrito de compras -->
+      <button class="cart-btn" id="cartBtn" aria-label="Ver carrito">
+        🛒
+        <span class="cart-btn__count" id="cartCount">0</span>
+      </button>
+
+      <!-- Botón hamburguesa (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <!-- Video de fondo: reemplazar el src por el video real (caballo saltando en clase de equitación) -->
+    <video class="hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=1600&q=80">
+      <source src="assets/hero-caballo-salto.mp4" type="video/mp4">
+    </video>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content fade-in">
+      <h1 class="hero__title">Aprendé equitación en un entorno natural y seguro.</h1>
+      <div class="hero__buttons">
+        <a href="https://wa.me/5492323654029?text=Hola%2C%20quiero%20consultar%20por%20los%20cursos%20de%20equitaci%C3%B3n.%20%C2%BFMe%20podr%C3%ADas%20pasar%20informaci%C3%B3n%3F"
+           class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+          Consultar por WhatsApp
+        </a>
+        <a href="#cursos" class="btn btn--secondary">Ver cursos</a>
+      </div>
+    </div>
+    <a href="#sobre-nosotros" class="hero__scroll" aria-label="Bajar a la siguiente sección">↓</a>
+  </section>
+
+  <!-- ===================== QUIÉNES SOMOS ===================== -->
+  <section class="founder" id="quienes-somos">
+    <div class="container">
+      <div class="founder__grid">
+        <div class="founder__photo fade-in">
+          <img src="images/foto%20quiene%20somos.jpg" alt="María Laura Bruzzone - Doma Nativa" loading="lazy">
+        </div>
+        <div class="founder__text fade-in">
+          <span class="section__tag">Quiénes somos</span>
+          <h2 class="section__title">María Laura Bruzzone</h2>
+          <p>
+            Doma Nativa nace de la pasión de María Laura Bruzzone por los caballos y la
+            equitación, transmitida a través de años de trabajo y aprendizaje junto a ellos.
+            Hoy comparte ese conocimiento enseñando con respeto, paciencia y un vínculo
+            genuino entre el alumno y el animal.
+          </p>
+          <p>
+            Cada clase está pensada para que el alumno avance a su propio ritmo, en un
+            entorno natural, seguro y de confianza.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE NOSOTROS ===================== -->
+  <section class="about" id="sobre-nosotros">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text fade-in">
+          <span class="section__tag">Nuestra propuesta</span>
+          <h2 class="section__title">Sobre nosotros</h2>
+          <p>
+            En nuestro espacio enseñamos equitación desde cero, acompañando a cada alumno
+            según su edad, experiencia y objetivos. Trabajamos con clases seguras, caballos
+            preparados y profesores capacitados para que cada persona pueda aprender con
+            confianza, respeto y disfrute.
+          </p>
+        </div>
+        <div class="about__highlights">
+          <div class="highlight-card fade-in">
+            <span class="highlight-card__icon">🎯</span>
+            <h3>Atención personalizada</h3>
+            <p>Cada alumno avanza a su ritmo, con seguimiento individual en cada clase.</p>
+          </div>
+          <div class="highlight-card fade-in">
+            <span class="highlight-card__icon">🐴</span>
+            <h3>Caballos preparados</h3>
+            <p>Animales mansos, entrenados y aptos para la enseñanza en todos los niveles.</p>
+          </div>
+          <div class="highlight-card fade-in">
+            <span class="highlight-card__icon">🌿</span>
+            <h3>Ambiente seguro y natural</h3>
+            <p>Instalaciones pensadas para aprender con tranquilidad, al aire libre.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CURSOS / LIBROS ===================== -->
+  <section class="courses" id="cursos">
+    <div class="container">
+      <span class="section__tag section__tag--center">Nuestros libros</span>
+      <h2 class="section__title section__title--center">Cursos disponibles</h2>
+      <p class="section__subtitle">Material propio para formarte en la docencia ecuestre y el entrenamiento de caballos.</p>
+
+      <div class="courses__grid">
+
+        <article class="course-card fade-in">
+          <img src="images/curso1.jpg" alt="La figura del maestro de equitación" class="course-card__img" loading="lazy">
+          <h3 class="course-card__title">La figura del maestro de equitación.</h3>
+          <p class="course-card__desc">
+            Tips para iniciarte en la docencia ecuestre.
+          </p>
+          <span class="course-card__price">$25.000</span>
+          <button class="btn btn--outline add-to-cart"
+                  data-name="La figura del maestro de equitación" data-price="25000">
+            Agregar al carrito
+          </button>
+        </article>
+
+        <article class="course-card fade-in">
+          <img src="images/curso2.jpg" alt="Cómo entrenar un caballo para salto desde cero" class="course-card__img" loading="lazy">
+          <h3 class="course-card__title">Cómo entrenar un caballo para salto desde cero</h3>
+          <p class="course-card__desc">
+            Guía paso a paso para entrenar un caballo de salto desde el comienzo.
+          </p>
+          <span class="course-card__price">$25.000</span>
+          <button class="btn btn--outline add-to-cart"
+                  data-name="Cómo entrenar un caballo para salto desde cero" data-price="25000">
+            Agregar al carrito
+          </button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERÍA ===================== -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <span class="section__tag section__tag--center">Nuestro día a día.</span>
+      <h2 class="section__title section__title--center">Galería</h2>
+      <p class="section__subtitle">Momentos de aprendizaje y conexión con los caballos.</p>
+
+      <div class="carousel fade-in" id="galleryCarousel">
+        <div class="carousel__viewport">
+          <div class="carousel__track" id="carouselTrack">
+            <div class="carousel__slide"><img src="images/1.jpg" alt="Galería Doma Nativa 1" loading="lazy" class="carousel__img"></div>
+            <div class="carousel__slide"><img src="images/2.jpg" alt="Galería Doma Nativa 2" loading="lazy" class="carousel__img"></div>
+            <div class="carousel__slide"><img src="images/3.jpg" alt="Galería Doma Nativa 3" loading="lazy" class="carousel__img"></div>
+            <div class="carousel__slide"><img src="images/4.jpg" alt="Galería Doma Nativa 4" loading="lazy" class="carousel__img"></div>
+            <div class="carousel__slide"><img src="images/5.jpg" alt="Galería Doma Nativa 5" loading="lazy" class="carousel__img"></div>
+            <div class="carousel__slide"><img src="images/6.jpg" alt="Galería Doma Nativa 6" loading="lazy" class="carousel__img"></div>
+          </div>
+
+          <button class="carousel__arrow carousel__arrow--prev" id="carouselPrev" aria-label="Foto anterior">‹</button>
+          <button class="carousel__arrow carousel__arrow--next" id="carouselNext" aria-label="Foto siguiente">›</button>
+        </div>
+
+        <div class="carousel__dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIOS ===================== -->
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <span class="section__tag section__tag--center">Lo que dicen nuestros alumnos.</span>
+      <h2 class="section__title section__title--center">Testimonios</h2>
+      <p class="section__subtitle">Experiencias reales de quienes ya aprendieron con nosotros.</p>
+
+      <div class="testimonials__grid">
+
+        <div class="testimonial-photo fade-in">
+          <img src="images/PHOTO-2026-06-19-16-00-45.jpg" alt="Testimonio de Celeste Domínguez" loading="lazy">
+        </div>
+
+        <div class="testimonial-photo fade-in">
+          <img src="images/PHOTO-2026-06-19-16-07-24.jpg" alt="Testimonio de De Marco Micaela" loading="lazy">
+        </div>
+
+        <div class="testimonial-photo fade-in">
+          <img src="images/PHOTO-2026-06-19-16-00-45(2).jpg" alt="Testimonio de un alumno" loading="lazy">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <span class="section__tag section__tag--center">Hablemos</span>
+      <h2 class="section__title section__title--center">Contacto</h2>
+      <p class="section__subtitle">
+        Escribinos y te asesoramos sobre cursos, horarios, valores y disponibilidad.
+      </p>
+
+      <div class="contact__grid">
+
+        <div class="contact__card fade-in">
+          <span class="contact__card-icon">📱</span>
+          <h3>WhatsApp</h3>
+          <p>La forma más rápida de recibir información.</p>
+          <a href="https://wa.me/5492323654029?text=Hola%2C%20quiero%20consultar%20por%20los%20cursos%20de%20equitaci%C3%B3n.%20%C2%BFMe%20podr%C3%ADas%20pasar%20informaci%C3%B3n%3F"
+             class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+            Escribir por WhatsApp
+          </a>
+        </div>
+
+        <div class="contact__card fade-in">
+          <span class="contact__card-icon">🕐</span>
+          <h3>Horarios de atención</h3>
+          <!-- Editar horarios según disponibilidad real -->
+          <ul class="contact__schedule">
+            <li>Lunes a viernes: 9:00 a 18:00 hs</li>
+            <li>Sábados: 9:00 a 13:00 hs</li>
+            <li>Domingos: cerrado</li>
+          </ul>
+        </div>
+
+        <div class="contact__card fade-in">
+          <span class="contact__card-icon">📍</span>
+          <h3>Ubicación</h3>
+          <!-- Reemplazar dirección y mapa por la ubicación real del establecimiento -->
+          <p>Ruta provincial, Mercedes, Buenos Aires, Argentina</p>
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps?q=Mercedes,Buenos%20Aires,Argentina&output=embed"
+              width="100%" height="220" style="border:0;" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación del establecimiento">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Redes sociales: reemplazar enlaces por las cuentas reales -->
+      <div class="contact__socials fade-in">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">📷</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">📘</a>
+        <a href="https://wa.me/5492323654029" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon social-icon--whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.149.347-.347.521-.521.174-.174.207-.298.31-.498.105-.198.05-.371-.05-.52-.099-.149-.694-1.672-.93-2.288-.247-.628-.504-.546-.694-.554-.173-.008-.372-.01-.57-.01-.198 0-.52.075-.792.372-.273.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.066 3.16 5.018 4.3 2.953 1.14 2.953.76 3.488.713.534-.05 1.758-.72 2.006-1.413.247-.694.247-1.288.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.91.534 3.696 1.46 5.222L2.05 21.95l4.85-1.39A9.95 9.95 0 0 0 12 22c5.523 0 10-4.477 10-10S17.524 2 12.001 2zm0 18a8.04 8.04 0 0 1-4.106-1.13l-.294-.176-3.03.868.88-2.95-.192-.305A7.97 7.97 0 0 1 4 12c0-4.418 3.582-8 8.001-8C16.418 4 20 7.582 20 12s-3.582 8-7.999 8z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <span class="logo__text logo__text--footer">Cursos de Equitación</span>
+        <p>Cursos de equitación para aprender, disfrutar y conectar con los caballos.</p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#quienes-somos">Quiénes somos</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__socials">
+        <h4>Seguinos</h4>
+        <div class="footer__social-icons">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">📷</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">📘</a>
+          <a href="https://wa.me/5492323654029" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-icon social-icon--whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.149.347-.347.521-.521.174-.174.207-.298.31-.498.105-.198.05-.371-.05-.52-.099-.149-.694-1.672-.93-2.288-.247-.628-.504-.546-.694-.554-.173-.008-.372-.01-.57-.01-.198 0-.52.075-.792.372-.273.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.066 3.16 5.018 4.3 2.953 1.14 2.953.76 3.488.713.534-.05 1.758-.72 2.006-1.413.247-.694.247-1.288.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.91.534 3.696 1.46 5.222L2.05 21.95l4.85-1.39A9.95 9.95 0 0 0 12 22c5.523 0 10-4.477 10-10S17.524 2 12.001 2zm0 18a8.04 8.04 0 0 1-4.106-1.13l-.294-.176-3.03.868.88-2.95-.192-.305A7.97 7.97 0 0 1 4 12c0-4.418 3.582-8 8.001-8C16.418 4 20 7.582 20 12s-3.582 8-7.999 8z"/>
+          </svg>
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Cursos de Equitación. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== BOTÓN FLOTANTE WHATSAPP ===================== -->
+  <a href="https://wa.me/5492323654029?text=Hola%2C%20quiero%20consultar%20por%20los%20cursos%20de%20equitaci%C3%B3n.%20%C2%BFMe%20podr%C3%ADas%20pasar%20informaci%C3%B3n%3F"
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp">
+    <svg class="whatsapp-float__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.149-.149.347-.347.521-.521.174-.174.207-.298.31-.498.105-.198.05-.371-.05-.52-.099-.149-.694-1.672-.93-2.288-.247-.628-.504-.546-.694-.554-.173-.008-.372-.01-.57-.01-.198 0-.52.075-.792.372-.273.297-1.04 1.016-1.04 2.479s1.065 2.876 1.213 3.074c.149.198 2.066 3.16 5.018 4.3 2.953 1.14 2.953.76 3.488.713.534-.05 1.758-.72 2.006-1.413.247-.694.247-1.288.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.91.534 3.696 1.46 5.222L2.05 21.95l4.85-1.39A9.95 9.95 0 0 0 12 22c5.523 0 10-4.477 10-10S17.524 2 12.001 2zm0 18a8.04 8.04 0 0 1-4.106-1.13l-.294-.176-3.03.868.88-2.95-.192-.305A7.97 7.97 0 0 1 4 12c0-4.418 3.582-8 8.001-8C16.418 4 20 7.582 20 12s-3.582 8-7.999 8z"/>
+    </svg>
+  </a>
+
+  <!-- ===================== BOTÓN FLOTANTE CARRITO ===================== -->
+  <button class="cart-float" id="cartFloatBtn" aria-label="Ver carrito">
+    🛒
+    <span class="cart-float__count" id="cartFloatCount">0</span>
+  </button>
+
+  <!-- ===================== LIGHTBOX GALERÍA ===================== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">×</button>
+    <button class="lightbox__arrow lightbox__arrow--prev" id="lightboxPrev" aria-label="Foto anterior">‹</button>
+    <img src="" alt="" id="lightboxImg">
+    <button class="lightbox__arrow lightbox__arrow--next" id="lightboxNext" aria-label="Foto siguiente">›</button>
+  </div>
+
+  <!-- ===================== CARRITO DE COMPRAS ===================== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer__header">
+      <h3>Tu carrito</h3>
+      <button class="cart-drawer__close" id="cartClose" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div class="cart-drawer__items" id="cartItems">
+      <p class="cart-drawer__empty" id="cartEmpty">Todavía no agregaste nada.</p>
+    </div>
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__total">
+        <span>Total</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <a href="#" class="btn btn--whatsapp" id="cartCheckout" target="_blank" rel="noopener noreferrer">
+        Consultar por WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
