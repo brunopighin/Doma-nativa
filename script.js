@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const cartEmpty = document.getElementById('cartEmpty');
   const cartTotalEl = document.getElementById('cartTotal');
   const cartCheckout = document.getElementById('cartCheckout');
-  const whatsappNumber = '5492323654029';
+  const whatsappNumber = '5492323358222';
 
   if (cartBtn && cartOverlay && cartDrawer) {
     let cart = [];
