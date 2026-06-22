@@ -2,6 +2,38 @@
    CURSOS DE EQUITACIÓN - SCRIPT PRINCIPAL
    ========================================================= */
 
+/* ---------- Preloader: logo + barra de carga ---------- */
+(() => {
+  const preloader = document.getElementById('preloader');
+  const siteWrapper = document.getElementById('siteWrapper');
+  if (!preloader || !siteWrapper) return;
+
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+
+  const reveal = () => {
+    siteWrapper.classList.add('is-visible');
+    document.body.classList.remove('no-scroll');
+  };
+
+  document.body.classList.add('no-scroll');
+
+  const SHOW_DURATION = 1800;
+  const HIDE_DURATION = 500;
+
+  window.setTimeout(() => {
+    preloader.classList.add('is-hidden');
+    preloader.setAttribute('aria-hidden', 'true');
+    reveal();
+
+    window.setTimeout(() => {
+      preloader.style.display = 'none';
+    }, HIDE_DURATION);
+  }, SHOW_DURATION);
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Header: cambia de estilo al hacer scroll ---------- */
