@@ -64,6 +64,7 @@
           <li><a href="#quienes-somos" class="nav__link">Quiénes somos</a></li>
           <li><a href="#cursos" class="nav__link">Cursos</a></li>
           <li><a href="#galeria" class="nav__link">Galería</a></li>
+          <li><a href="#obras-arte" class="nav__link">Obras de arte</a></li>
           <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
           <li><a href="#contacto" class="nav__link">Contacto</a></li>
         </ul>
@@ -233,12 +234,12 @@
       <div class="carousel fade-in" id="galleryCarousel">
         <div class="carousel__viewport">
           <div class="carousel__track" id="carouselTrack">
-            <div class="carousel__slide"><img src="images/1.jpg" alt="Galería Doma Nativa 1" loading="lazy" class="carousel__img"></div>
-            <div class="carousel__slide"><img src="images/2.jpg" alt="Galería Doma Nativa 2" loading="lazy" class="carousel__img"></div>
-            <div class="carousel__slide"><img src="images/3.jpg" alt="Galería Doma Nativa 3" loading="lazy" class="carousel__img"></div>
-            <div class="carousel__slide"><img src="images/4.jpg" alt="Galería Doma Nativa 4" loading="lazy" class="carousel__img"></div>
-            <div class="carousel__slide"><img src="images/5.jpg" alt="Galería Doma Nativa 5" loading="lazy" class="carousel__img"></div>
-            <div class="carousel__slide"><img src="images/6.jpg" alt="Galería Doma Nativa 6" loading="lazy" class="carousel__img"></div>
+            <div class="carousel__slide"><img src="images/1.jpg" alt="Galería Doma Nativa 1" loading="lazy" class="carousel__img" data-lightbox-group="galeria"></div>
+            <div class="carousel__slide"><img src="images/2.jpg" alt="Galería Doma Nativa 2" loading="lazy" class="carousel__img" data-lightbox-group="galeria"></div>
+            <div class="carousel__slide"><img src="images/3.jpg" alt="Galería Doma Nativa 3" loading="lazy" class="carousel__img" data-lightbox-group="galeria"></div>
+            <div class="carousel__slide"><img src="images/4.jpg" alt="Galería Doma Nativa 4" loading="lazy" class="carousel__img" data-lightbox-group="galeria"></div>
+            <div class="carousel__slide"><img src="images/5.jpg" alt="Galería Doma Nativa 5" loading="lazy" class="carousel__img" data-lightbox-group="galeria"></div>
+            <div class="carousel__slide"><img src="images/6.jpg" alt="Galería Doma Nativa 6" loading="lazy" class="carousel__img" data-lightbox-group="galeria"></div>
           </div>
 
           <button class="carousel__arrow carousel__arrow--prev" id="carouselPrev" aria-label="Foto anterior">‹</button>
@@ -246,6 +247,55 @@
         </div>
 
         <div class="carousel__dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OBRAS DE ARTE ===================== -->
+  <section class="artworks" id="obras-arte">
+    <div class="container">
+      <span class="section__tag section__tag--center">Pinturas y dibujos</span>
+      <h2 class="section__title section__title--center">Obras de arte</h2>
+      <p class="section__subtitle">Retratos y bocetos de caballos realizados a mano por María Laura Bruzzone.</p>
+
+      <div class="artworks__grid">
+
+        <figure class="artwork-card fade-in">
+          <img src="images/obras/obra-01-retrato-frison.jpg" alt="Retrato de caballo frisón, óleo sobre tela" loading="lazy" class="artwork-card__img" data-lightbox-group="obras">
+        </figure>
+
+        <figure class="artwork-card fade-in">
+          <img src="images/obras/obra-02-jugador-polo.jpg" alt="Jugador de polo a caballo, pintura al óleo" loading="lazy" class="artwork-card__img" data-lightbox-group="obras">
+        </figure>
+
+        <figure class="artwork-card fade-in">
+          <img src="images/obras/obra-08-dibujo-tinta.jpg" alt="Cabeza de caballo enmarcada en una herradura, dibujo en tinta" loading="lazy" class="artwork-card__img" data-lightbox-group="obras">
+        </figure>
+
+        <figure class="artwork-card fade-in">
+          <img src="images/obras/obra-06-cabeza-blanco-negro.jpg" alt="Cabeza de caballo con crin larga en blanco y negro, acrílico" loading="lazy" class="artwork-card__img" data-lightbox-group="obras">
+        </figure>
+
+        <figure class="artwork-card fade-in">
+          <img src="images/obras/obra-03-boceto-referencia.jpg" alt="Boceto a lápiz de una cabeza de caballo junto a su foto de referencia" loading="lazy" class="artwork-card__img" data-lightbox-group="obras">
+        </figure>
+
+        <figure class="artwork-card fade-in">
+          <img src="images/obras/obra-07-triptico.jpg" alt="Tríptico de caballos en blanco y negro, acrílico sobre tela" loading="lazy" class="artwork-card__img" data-lightbox-group="obras">
+        </figure>
+
+        <figure class="artwork-card fade-in">
+          <img src="images/obras/obra-05-boceto-caballos.jpg" alt="Boceto en lapicera de caballos al galope" loading="lazy" class="artwork-card__img" data-lightbox-group="obras">
+        </figure>
+
+        <figure class="artwork-card fade-in">
+          <img src="images/obras/obra-04-boceto-lapicera.jpg" alt="Boceto en lapicera de las patas de un caballo salpicando agua" loading="lazy" class="artwork-card__img" data-lightbox-group="obras">
+        </figure>
+
+        <figure class="artwork-card fade-in">
+          <img src="images/obras/obra-09-abstracto.jpg" alt="Composición abstracta de caballo con anatomía a la vista" loading="lazy" class="artwork-card__img" data-lightbox-group="obras">
+        </figure>
+
       </div>
     </div>
   </section>
@@ -317,6 +367,7 @@
           <li><a href="#quienes-somos">Quiénes somos</a></li>
           <li><a href="#cursos">Cursos</a></li>
           <li><a href="#galeria">Galería</a></li>
+          <li><a href="#obras-arte">Obras de arte</a></li>
           <li><a href="#testimonios">Testimonios</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>

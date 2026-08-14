@@ -845,6 +845,43 @@ ul {
   transform: scale(1.2);
 }
 
+/* ===================== OBRAS DE ARTE ===================== */
+.artworks {
+  padding: 100px 0;
+  background-color: var(--color-white);
+}
+
+.artworks__grid {
+  column-count: 3;
+  column-gap: 24px;
+  margin-top: 20px;
+}
+
+.artwork-card {
+  break-inside: avoid;
+  margin-bottom: 24px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  background-color: var(--color-cream);
+  transition: var(--transition);
+}
+
+.artwork-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.artwork-card__img {
+  width: 100%;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.artwork-card__img:hover {
+  transform: scale(1.03);
+}
+
 /* ===================== TESTIMONIOS ===================== */
 .testimonials {
   padding: 100px 0;
@@ -1204,6 +1241,10 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .artworks__grid {
+    column-count: 2;
+  }
+
   .contact__grid {
     grid-template-columns: 1fr;
   }
@@ -1256,6 +1297,10 @@ ul {
 
   .testimonials__grid {
     grid-template-columns: 1fr;
+  }
+
+  .artworks__grid {
+    column-count: 1;
   }
 
   .hero__buttons {

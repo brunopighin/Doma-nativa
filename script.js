@@ -181,17 +181,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxNext = document.getElementById('lightboxNext');
 
   if (lightbox && lightboxImg && lightboxClose && lightboxPrev && lightboxNext) {
-    const galleryImages = document.querySelectorAll('.carousel__img');
+    const lightboxTriggers = Array.from(document.querySelectorAll('[data-lightbox-group]'));
+    let currentGroup = [];
     let lightboxIndex = 0;
 
     const showImage = () => {
-      const img = galleryImages[lightboxIndex];
+      const img = currentGroup[lightboxIndex];
       lightboxImg.src = img.src;
       lightboxImg.alt = img.alt;
     };
 
-    const openLightbox = (index) => {
-      lightboxIndex = index;
+    const openLightbox = (img) => {
+      currentGroup = lightboxTriggers.filter((el) => el.dataset.lightboxGroup === img.dataset.lightboxGroup);
+      lightboxIndex = currentGroup.indexOf(img);
       showImage();
       lightbox.classList.add('active');
       document.body.classList.add('no-scroll');
@@ -202,17 +204,17 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.classList.remove('no-scroll');
     };
 
-    galleryImages.forEach((img, index) => {
-      img.addEventListener('click', () => openLightbox(index));
+    lightboxTriggers.forEach((img) => {
+      img.addEventListener('click', () => openLightbox(img));
     });
 
     lightboxPrev.addEventListener('click', () => {
-      lightboxIndex = (lightboxIndex - 1 + galleryImages.length) % galleryImages.length;
+      lightboxIndex = (lightboxIndex - 1 + currentGroup.length) % currentGroup.length;
       showImage();
     });
 
     lightboxNext.addEventListener('click', () => {
-      lightboxIndex = (lightboxIndex + 1) % galleryImages.length;
+      lightboxIndex = (lightboxIndex + 1) % currentGroup.length;
       showImage();
     });
 
